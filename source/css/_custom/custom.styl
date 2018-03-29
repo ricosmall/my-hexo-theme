@@ -1,0 +1,37 @@
+// Custom styles.
+// 增加自定义样式
+
+// 标题跟下面的内容左对齐
+// old:
+// margin-left: -20px;
+.site-meta {
+  margin-left: 0;
+}
+
+// 标题上下的横线长度跟标题内容长度保持一致
+// old:
+// width: 75%;
+.logo-line-before,
+.logo-line-after {
+  width: 100%;
+}
+
+// 新增样式，去掉表格左右边线
+table {
+  border-left: none;
+  border-right: none;
+}
+
+// 去掉表格中间的横线和竖线
+th, td {
+  border-bottom: 1px solid $table-cell-border-bottom-color;
+  border-right: none;
+}
+
+// 增加手机模式下菜单中每个菜单项的高度
+.menu .menu-item {
+  @media screen and (max-width: 767px) {
+    line-height: 3em;
+    border-bottom: 1px dotted #aaa;
+  }
+}
